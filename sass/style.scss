@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'variables';
+@import 'mixin';
 @font-face {
     font-family: 'ubunturegular';
     src: url('../fonts/ubuntu-regular-webfont.woff2') format('woff2'),
@@ -175,7 +176,7 @@ body {
 	.artic__digit {
 		// width: 80px;
 		height: 64px;
-		opacity: 0.1;
+		@include opacity(0.1);
 		color: #2a2b2e;
 		float: left;
 		font-size: 90px;
@@ -234,13 +235,20 @@ body {
 	#servise_img2,
 	#servise_img3 {
 		padding-right: 39px;
+	
 		
+	}
+	img {
+		
+		width: 260px;
+		height: 260px;
 	}
 	a {
 		color: white;
 	}
 	a:hover {
 		color:#f4b60d;
+		
 	}
 
 	figure {
@@ -435,20 +443,16 @@ footer {
 	width: 260px;
 	float: left;
 }
-// .links,
-// .socials,
-// .blogroll {
-// 	float: left;
-// }
+
 .menus__link {
-	opacity: 0.3;
+	@include opacity(0.3);
 	color: white;
 	font-family: Arial;
 	font-size: 13px;
 }
 .menus__link:hover {
 	color: #266caf;
-	opacity: 1;
+	@include opacity(1);
 }
 .menus__list {
 	height: 39px;
@@ -468,7 +472,7 @@ footer {
 	background: #35383c;
 	span {
 	line-height: 60px;
-	opacity: 0.2;
+	@include opacity(0.2);
 	color: white;
 	font-family: Arial;
 	font-size: 12px;	

@@ -146,6 +146,7 @@ body {
   .artic .artic__digit {
     height: 64px;
     opacity: 0.1;
+    filter: alpha(opacity=10);
     color: #2a2b2e;
     float: left;
     font-size: 90px; }
@@ -193,6 +194,9 @@ body {
   .servise #servise_img2,
   .servise #servise_img3 {
     padding-right: 39px; }
+  .servise img {
+    width: 260px;
+    height: 260px; }
   .servise a {
     color: white; }
   .servise a:hover {
@@ -340,13 +344,15 @@ footer {
 
 .menus__link {
   opacity: 0.3;
+  filter: alpha(opacity=30);
   color: white;
   font-family: Arial;
   font-size: 13px; }
 
 .menus__link:hover {
   color: #266caf;
-  opacity: 1; }
+  opacity: 1;
+  filter: alpha(opacity=100); }
 
 .menus__list {
   height: 39px;
@@ -367,6 +373,7 @@ footer {
   .adress span {
     line-height: 60px;
     opacity: 0.2;
+    filter: alpha(opacity=20);
     color: white;
     font-family: Arial;
     font-size: 12px; }
